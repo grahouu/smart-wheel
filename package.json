@@ -1,0 +1,29 @@
+{
+    "name": "smart-wheel",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start-browser-api": "node browser-api/index.js",
+        "dev-browser-api": "node --inspect=0.0.0.0:9229 browser-api/index.js",
+        "start": "npm run dev-browser-api",
+        "watch": "ENV=dev nodemon --config ./nodemon.json --exec ' npm run start'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/grahouu/smart-wheel.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/grahouu/smart-wheel/issues"
+    },
+    "homepage": "https://github.com/grahouu/smart-wheel#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.12",
+        "puppeteer": "^10.2.0",
+        "querystring": "^0.2.1"
+    }
+}
