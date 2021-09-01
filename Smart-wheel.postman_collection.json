@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "c7d4bcbd-e120-453c-95a2-ad8ebff0d7cc",
+		"name": "Smart-wheel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:1001/open-browser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1001/open-browser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1001",
+					"path": [
+						"open-browser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1001/interface-info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1001/interface-info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1001",
+					"path": [
+						"interface-info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1001/close-browser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1001/close-browser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1001",
+					"path": [
+						"close-browser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1001/bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"placement\": \"bottom\",\n    \"price\": 2.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1001/bet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1001",
+					"path": [
+						"bet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1001/bet/cancel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1001/bet/cancel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1001",
+					"path": [
+						"bet",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
